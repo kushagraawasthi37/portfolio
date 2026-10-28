@@ -1,0 +1,11 @@
+# Local backups and heavy raw frame dumps
+_backup/
+video_frames_1080p_enhanced/
+design_reference.jpg
+
+
+# OS & Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

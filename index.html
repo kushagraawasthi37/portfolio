@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Kushagra Awasthi — Full Stack Developer</title>
+  <meta name="description"
+    content="Kushagra Awasthi — Full Stack Developer focused on backend systems, scalable applications and thoughtful engineering. NIT Srinagar, class of 2027." />
+  <meta name="theme-color" content="#070910" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Extraordinary Cinematic Preloader -->
+  <div id="loader" class="loader" aria-live="polite">
+    <!-- Shutter Split Curtains -->
+    <div class="loader__curtain loader__curtain--top" aria-hidden="true"></div>
+    <div class="loader__curtain loader__curtain--bottom" aria-hidden="true"></div>
+
+    <!-- Ambient Glow & Subtle Futuristic Grid -->
+    <div class="loader__bg" aria-hidden="true">
+      <div class="loader__glow"></div>
+      <div class="loader__grid"></div>
+    </div>
+
+    <!-- HUD Corner Technical Markers -->
+    <div class="loader__hud" aria-hidden="true">
+      <!-- <div class="loader__hud-item loader__hud-tl mono">KA.PORTFOLIO</div>
+      <div class="loader__hud-item loader__hud-tr mono">NIT SRINAGAR · '27</div> -->
+      <!-- <div class="loader__hud-item loader__hud-bl mono"><span class="loader__hud-dot"></span> 240-FRAME ENGINE</div> -->
+      <!-- <div class="loader__hud-item loader__hud-br mono">CORE // INITIALIZED</div> -->
+    </div>
+
+    <!-- Central Cinematic Core -->
+    <div class="loader__inner">
+      <!-- Glowing Animated Monogram Emblem -->
+      <div class="loader__emblem" aria-hidden="true">
+        <svg class="loader__ring" viewBox="0 0 100 100">
+          <circle class="loader__ring-bg" cx="50" cy="50" r="44"></circle>
+          <circle id="loader-ring-val" class="loader__ring-val" cx="50" cy="50" r="44"></circle>
+        </svg>
+        <span class="loader__monogram">KA</span>
+      </div>
+
+      <!-- Identity Typography -->
+      <div class="loader__identity">
+        <span class="loader__eyebrow mono"><span class="loader__pulse"></span> SYSTEM LOADING</span>
+        <h1 class="loader__name">KUSHAGRA AWASTHI</h1>
+        <p class="loader__tagline mono">FULL STACK &amp; AI SYSTEMS DEVELOPER</p>
+      </div>
+
+      <!-- High-Fashion Big Monospace Percentage -->
+      <div class="loader__display mono">
+        <span class="loader__pct-val" id="loader-pct">00</span><span class="loader__pct-sym">%</span>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Scroll-driven background -->
+  <div class="stage" aria-hidden="true">
+    <canvas id="bg"></canvas>
+    <div class="stage__vignette"></div>
+  </div>
+  <div class="progress" aria-hidden="true"><i id="progress-bar"></i></div>
+
+  <!-- Nav (right-aligned) -->
+  <header class="nav" id="nav">
+    <div class="nav__left">
+      <a href="#home" class="nav__logo" aria-label="Kushagra Awasthi — home"><span>KA</span></a>
+      <span class="status"><i></i>Open to opportunities</span>
+    </div>
+    <div class="nav__right">
+      <nav class="nav__pill" id="nav-pill" aria-label="Primary">
+        <a href="#about" data-nav="about">About</a>
+        <a href="#skills" data-nav="skills">Toolkit</a>
+        <a href="#experience" data-nav="experience">Experience</a>
+        <a href="#projects" data-nav="projects">Work</a>
+        <a href="#practice" data-nav="practice">DSA</a>
+        <a href="#contact" data-nav="contact">Contact</a>
+      </nav>
+      <a class="btn btn--sm nav__cta" href="mailto:kushagraawasthi37@gmail.com">Hire me</a>
+      <button class="nav__burger" id="burger" aria-label="Open menu" aria-expanded="false"><i></i><i></i></button>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- 00 HERO -->
+    <section id="home" class="hero" data-frame="1">
+      <div class="hero__main">
+        <p class="eyebrow mono reveal"><span class="dot"></span> Kushagra Awasthi · Full AI Stack Developer</p>
+        <h1 class="hero__title" aria-label="I build products, not just projects.">
+          <span class="line"><span class="line__in">I build</span></span>
+          <span class="line"><span class="line__in"><em>products,</em></span></span>
+          <span class="line"><span class="line__in dim">not just</span></span>
+          <span class="line"><span class="line__in dim">projects.</span></span>
+        </h1>
+        <p class="hero__sub reveal">Full Stack AI Developer focused on backend systems, scalable applications, and
+          thoughtful engineering.</p>
+        <p class="hero__intro reveal">I'm a software developer and NIT Srinagar student who enjoys building complete
+          products—from polished user interfaces to secure APIs, databases, and real-time systems. I combine full-stack
+          development with strong problem-solving skills and an interest in AI-powered applications.</p>
+        <div class="hero__cta reveal">
+          <a class="btn" href="#projects">Explore My Work <svg viewBox="0 0 24 24">
+              <path d="M7 17 17 7M8 7h9v9" />
+            </svg></a>
+          <a class="btn btn--ghost" href="#contact">Get in Touch</a>
+          <a class="textlink" href="https://github.com/kushagraawasthi37" target="_blank" rel="noopener"><svg
+              viewBox="0 0 24 24" class="gh">
+              <path
+                d="M12 .5a11.5 11.5 0 0 0-3.64 22.4c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.62 1.59.23 2.76.11 3.05.74.81 1.18 1.83 1.18 3.09 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z" />
+            </svg>View GitHub</a>
+        </div>
+      </div>
+
+      <aside class="hero__card glass reveal" aria-label="Quick facts">
+        <div class="stat"><b data-count="1200" data-suffix="+">1200+</b><span>DSA problems solved</span></div>
+        <div class="stat"><b data-count="6">6</b><span>Featured projects</span></div>
+        <div class="stat"><b data-count="8.4" data-dec="1">8.4</b><span>CGPA · NIT Srinagar</span></div>
+      </aside>
+    </section>
+
+    <!-- 01 ABOUT -->
+    <section id="about" class="about" data-frame="20">
+      <div class="tri beat">
+        <div class="L plain">
+          <p class="label mono reveal"><b>01</b> About</p>
+          <h2 class="reveal">A developer who turns complex ideas into useful software.</h2>
+          <p class="reveal">I love turning ideas into things people can actually use. Whether it's building interactive
+            experiences, designing backend systems, or solving problems that demand thoughtful engineering, I'm always
+            curious about how to make software better. For me, development is more than writing code—it's about
+            understanding problems, exploring possibilities, and creating solutions that make a difference.</p>
+        </div>
+        <div class="R cards-r">
+          <div class="mini glass reveal"><span class="mono">Education</span><b>B.Tech, Information Technology</b>
+            <p>NIT Srinagar · graduating July 2027</p><em class="tag tag--lime mono">CGPA 8.4 / 10</em>
+          </div>
+          <div class="mini glass reveal"><span class="mono">Based in</span><b>Shahjahanpur, Uttar Pradesh</b>
+            <p>India</p>
+          </div>
+          <div class="mini glass reveal"><span class="mono">Problem solving</span><b>1,200+ DSA problems</b>
+            <p>LeetCode &amp; TakeUForward</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="tri beat beat--b">
+        <div class="L plain">
+          <p class="label mono reveal"><b>·</b> The work</p>
+          <p class="lead reveal">From building e-commerce applications and social platforms to API infrastructure,
+            developer tools, and AI-powered assistants. I enjoy exploring different sides of software engineering and
+            turning ideas into real products.</p>
+          <p class="reveal">I'm looking to grow as a software engineer, work alongside people who challenge me, and
+            build thoughtful, reliable products that solve problems beyond the code.</p>
+        </div>
+        <div class="R care">
+          <p class="label mono reveal">What I care about</p>
+          <ul>
+            <li class="reveal"><span class="mono">01</span>
+              <div><b>Building end-to-end</b>
+                <p>Connecting frontend experiences, backend services, and data layers into complete products.</p>
+              </div>
+            </li>
+            <li class="reveal"><span class="mono">02</span>
+              <div><b>Reliable systems</b>
+                <p>Authentication, transaction safety, error handling, caching, and failure scenarios.</p>
+              </div>
+            </li>
+            <li class="reveal"><span class="mono">03</span>
+              <div><b>Performance</b>
+                <p>Lazy loading, pagination, query caching, and efficient API workflows.</p>
+              </div>
+            </li>
+            <li class="reveal"><span class="mono">04</span>
+              <div><b>Thoughtful architecture</b>
+                <p>Separating responsibilities and designing extensible interfaces with the trade-offs in mind.</p>
+              </div>
+            </li>
+            <li class="reveal"><span class="mono">05</span>
+              <div><b>Continuous learning</b>
+                <p>DSA practice, system design, and experiments with AI-powered applications.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 02 TOOLKIT (pinned) -->
+    <section id="skills" class="skills" data-frame="56">
+      <div class="skills__sticky">
+        <div class="tri tk">
+          <div class="L tk__left">
+            <p class="label mono"><b>02</b> Technical arsenal</p>
+            <h2>An engineering toolkit, not a list.</h2>
+            <div class="tk__list" id="tk-list" role="tablist" aria-label="Skill categories"></div>
+          </div>
+          <div class="R tk__right glass" id="tk-panel" aria-live="polite">
+            <header><span class="mono" id="tk-count">01 / 08</span>
+              <h3 id="tk-title">Languages</h3>
+            </header>
+            <div class="tk__chips" id="tk-chips"></div>
+            <div class="tk__bar"><i id="tk-bar"></i></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03 EXPERIENCE -->
+    <section id="experience" class="exp" data-frame="122">
+      <div class="tri">
+        <div class="L">
+          <div class="job glass reveal">
+            <p class="label mono"><b>03</b> Experience</p>
+            <div class="job__head">
+              <div>
+                <h2>Full Stack Engineer Intern</h2>
+                <p class="job__co">Axcentra</p>
+              </div>
+              <span class="tag tag--lime mono">Dec 2025 – Feb 2026</span>
+            </div>
+            <p class="muted">Backend services for <b>NeuralShop</b>, an AI-integrated e-commerce platform.</p>
+            <ol class="timeline">
+              <li><i></i>
+                <div><b>REST APIs &amp; services</b>
+                  <p>Developed REST APIs and backend services using Node.js, Express.js, and MongoDB.</p>
+                </div>
+              </li>
+              <li><i></i>
+                <div><b>Auth &amp; access control</b>
+                  <p>Implemented JWT authentication and role-based access control.</p>
+                </div>
+              </li>
+              <li><i></i>
+                <div><b>Payment reliability</b>
+                  <p>Built order and payment workflows with duplicate-transaction checks to prevent repeated processing.
+                  </p>
+                </div>
+              </li>
+              <li><i></i>
+                <div><b>Frontend collaboration</b>
+                  <p>Defined API contracts for frontend integration.</p>
+                </div>
+              </li>
+              <li><i></i>
+                <div><b>Debugging &amp; code review</b>
+                  <p>Debugged backend and database issues and incorporated code-review feedback to improve reliability
+                    and code quality.</p>
+                </div>
+              </li>
+            </ol>
+          </div>
+        </div>
+        <div class="R exp__tags">
+          <span class="tag mono reveal">Backend ownership</span>
+          <span class="tag mono reveal">API development</span>
+          <span class="tag mono reveal">Transaction reliability</span>
+          <span class="tag mono reveal">Frontend integration</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04 PROJECTS -->
+    <section id="projects" class="projects" data-frame="150">
+      <div class="tri tri--wide">
+        <div class="L">
+          <div class="projects__head">
+            <p class="label mono reveal"><b>04</b> Featured work</p>
+            <h2 class="reveal">Six products, built end to end.</h2>
+            <p class="muted reveal">Visual case studies, ordered by relevance to full-stack and software-engineering
+              roles. Open any card for the engineering decisions behind it.</p>
+          </div>
+          <div class="cards" id="cards"></div>
+        </div>
+        <aside class="R pindex" aria-label="Project index">
+          <ul id="pindex"></ul>
+        </aside>
+      </div>
+    </section>
+
+    <!-- 05 PRACTICE -->
+    <section id="practice" class="practice" data-frame="234">
+      <div class="tri">
+        <div class="L">
+          <div class="glass reveal">
+            <p class="label mono"><b>05</b> Problem solving</p>
+            <h2>1,200+ DSA problems solved.</h2>
+            <p class="muted">Problem-solving is an important part of my software engineering foundation. It has helped
+              me practise algorithmic thinking, complexity analysis, debugging, and breaking down unfamiliar problems.
+            </p>
+            <div class="practice__links">
+              <a class="btn btn--ghost" href="https://leetcode.com/u/kushagra7661/" target="_blank"
+                rel="noopener">LeetCode <svg viewBox="0 0 24 24">
+                  <path d="M7 17 17 7M8 7h9v9" />
+                </svg></a>
+              <a class="btn btn--ghost" href="https://takeuforward.org/profile/Kushagra76" target="_blank"
+                rel="noopener">TakeUForward <svg viewBox="0 0 24 24">
+                  <path d="M7 17 17 7M8 7h9v9" />
+                </svg></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 06 CONTACT -->
+    <section id="contact" class="contact" data-frame="240">
+      <div class="contact__inner">
+        <p class="label mono reveal"><b>06</b> Contact</p>
+        <h2 class="contact__title reveal">Have something<br />worth <span>building?</span></h2>
+        <p class="contact__sub reveal">I'm interested in software engineering opportunities, challenging technical
+          problems, and projects where thoughtful engineering can make a real difference. If you're building something
+          interesting or looking for a developer who enjoys working across the stack, let's connect.</p>
+        <div class="contact__row reveal">
+          <a class="btn btn--lg" href="mailto:kushagraawasthi37@gmail.com">kushagraawasthi37@gmail.com</a>
+          <button class="btn btn--ghost btn--lg" id="copy-mail" type="button">Copy email</button>
+        </div>
+        <ul class="socials reveal">
+          <li><a href="https://www.linkedin.com/in/kushagraawasthi76/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://github.com/kushagraawasthi37" target="_blank" rel="noopener">GitHub</a></li>
+        </ul>
+      </div>
+      <footer class="footer mono">
+        <span>© 2026 Kushagra Awasthi · Shahjahanpur, India</span>
+        <a href="#home">Back to top ↑</a>
+      </footer>
+    </section>
+
+  </main>
+
+  <!-- Case-study modal -->
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="m-title" hidden>
+    <div class="modal__backdrop" data-close></div>
+    <article class="modal__panel">
+      <button class="modal__close" data-close aria-label="Close case study"><svg viewBox="0 0 24 24">
+          <path d="M6 6l12 12M18 6 6 18" />
+        </svg></button>
+      <div class="modal__scroll" id="m-scroll">
+        <figure class="modal__fig"><img id="m-img" alt="" />
+          <figcaption class="mono" id="m-cap"></figcaption>
+        </figure>
+        <div class="modal__body">
+          <div class="modal__main">
+            <p class="mono modal__cat" id="m-cat"></p>
+            <h2 id="m-title"></h2>
+            <p class="modal__lead" id="m-over"></p>
+            <h4 class="mono">Engineering highlights</h4>
+            <ul class="bullets" id="m-high"></ul>
+          </div>
+          <aside class="modal__side">
+            <div class="box">
+              <h4 class="mono">What it demonstrates</h4>
+              <p id="m-demo"></p>
+            </div>
+            <div class="box">
+              <h4 class="mono">Technology</h4>
+              <p class="chips" id="m-stack"></p>
+            </div>
+            <a class="btn" id="m-gh" target="_blank" rel="noopener">View on GitHub <svg viewBox="0 0 24 24">
+                <path d="M7 17 17 7M8 7h9v9" />
+              </svg></a>
+            <div class="modal__nav"><button type="button" id="m-prev" class="textlink">← Previous</button><button
+                type="button" id="m-next" class="textlink">Next →</button></div>
+          </aside>
+        </div>
+      </div>
+    </article>
+  </div>
+  <div class="toast mono" id="toast" role="status">Email copied</div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
